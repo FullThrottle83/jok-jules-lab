@@ -1,0 +1,18 @@
+{
+  "name": "jok-jules-lab",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Synthetic zero-dependency repository for deterministic Jules/JOK integration experiments.",
+  "scripts": {
+    "test": "node --test",
+    "lab:self-check": "node .lab-private/lab.mjs self-check",
+    "lab:prepare": "node .lab-private/lab.mjs prepare",
+    "lab:smoke": "node .lab-private/lab.mjs run --repetitions 1 --limit 6 --concurrency 6",
+    "lab:60": "node .lab-private/lab.mjs run --repetitions 5 --concurrency 60",
+    "lab:report": "node .lab-private/lab.mjs report"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}

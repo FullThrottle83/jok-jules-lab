@@ -1,0 +1,4 @@
+node_modules/
+.lab-private/
+*.log
+.DS_Store
