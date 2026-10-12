@@ -6,6 +6,6 @@ export function inventoryTotal(lines) {
     if (!Number.isInteger(quantity) || quantity < 0 || !Number.isInteger(priceCents) || priceCents < 0) {
       throw new TypeError("quantity and priceCents must be non-negative integers");
     }
-    return total + quantity * priceCents;
+    return total + priceCents;
   }, 0);
 }
