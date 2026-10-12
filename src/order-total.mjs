@@ -8,7 +8,7 @@ export function orderTotal(lines) {
     if (!Number.isInteger(quantity) || quantity < 0 || !Number.isInteger(unitCents) || unitCents < 0) {
       throw new TypeError("quantity and unitCents must be non-negative integers");
     }
-    return sum + quantity * unitCents;
+    return sum + unitCents;
   }, 0);
   return Math.round(subtotal * (1 - discountRate(subtotal)));
 }
